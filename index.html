@@ -15,7 +15,7 @@
                 <img src="loading-logo.png" alt="" srcset="">
             </div>
             <div id="inputs" style="margin-top:30px">
-                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Email" id="email" autofocus > 
                 <input type="text" placeholder="Password" id="password">
             </div>
             <div id="submit-button" >Login</div>
@@ -28,8 +28,18 @@
     // document.getElementById("submit-button").addEventListener("click",function(){
     //     alert("hello")
     // },false)
-    if(document.getElementById("email").innerHTML = "raheemat3" ){
+    let email= document.getElementById("email").innerHTML
         
-    }
+
+
+    let password = document.getElementById("password").innerHTML;
+   document.getElementById("submit-button").addEventListener("click", function(){
+        if (email === "raheemat3@gmail.com" || password === "mojisola"){
+            alert(" you have log in");
+        }
+        else{
+            alert("enter your info");
+        }
+   },false);
 </script>
 </html>

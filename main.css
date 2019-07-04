@@ -14,15 +14,21 @@
 }
 #inputs input{
     width: 80%;
-    border-radius: 7px;
+    border-radius: 20px;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 16px;
+    outline: none;
+    border: none
+}
+input:focus{
+    box-shadow: 1px 1px 5px rgba(75, 75, 251, 0.856);
+    outline: rgb(92, 92, 255);
 }
 #submit-button{
     width: 80%;
-    border-radius: 7px;
+    border-radius: 20px;
     padding: 5px;
-    margin-top: 50px;
+    margin-top: 40px;
     background-color: blue;
     text-align: center;
     color: white;
@@ -30,6 +36,7 @@
 }
 #container span{
     color: blue;
+    cursor: pointer;
 }
 #container p{
     margin-top: 20px;
